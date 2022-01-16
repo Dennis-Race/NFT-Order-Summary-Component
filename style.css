@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    padding: 0 15px;
+}
+
+@media screen and (min-width: 640px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-color: #E0E8FF;
+        background-position: top;
+        background-size: 100%;
+        
+      }
+}
+
+.card {
+    width: 375px;
+    background-color: white;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.card-info img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-title {
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
+
+.card-info p {
+    color: hsl(224, 23%, 55%);
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card-plan {
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.card-cost {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-plan-title {
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.card-plan-annual {
+    color: hsl(224, 23%, 55%);
+}
+
+.plan-change {
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.plan-change:hover {
+    cursor: pointer;
+    color: hsl(224, 23%, 55%);
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proceed-btn {
+    background-color: hsl(245, 75%, 52%);
+    padding: 15px;
+    color: white;
+    width: 70%;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.proceed-btn:hover {
+    background-color: #766cf1;
+    cursor: pointer;
+    box-shadow: 0px 10px 16px 0px hsla(245, 83%, 68%, 0.4);
+}
+
+.cancel-btn {
+    padding-top: 20px;
+    color:hsl(224, 23%, 55%);
+    border: none;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.cancel-btn:hover {
+    color:hsl(245, 75%, 52%);
+    cursor: pointer;
+}
