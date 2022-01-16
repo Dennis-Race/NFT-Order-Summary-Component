@@ -121,6 +121,7 @@ body {
     border: none;
     font-size: 18px;
     font-weight: 900;
+    padding-bottom: 25px;
 }
 
 .cancel-btn:hover {
